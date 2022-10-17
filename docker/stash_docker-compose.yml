@@ -29,12 +29,12 @@ services:
       ## E.g. you can change ./config:/root/.stash to ./stash:/root/.stash
       
       ## Keep configs, scrapers, and plugins here.
-      - ./config:/root/.stash
+      - /mnt/stash/config:/root/.stash
       ## Point this at your collection.
-      - ./data:/data
+      - /mnt/stash/data:/data
       ## This is where your stash's metadata lives
-      - ./metadata:/metadata
+      - /mnt/stash/metadata:/metadata
       ## Any other cache content.
-      - ./cache:/cache
+      - /mnt/stash/cache:/cache
       ## Where to store generated content (screenshots,previews,transcodes,sprites)
-      - ./generated:/generated
+      - /mnt/stash/generated:/generated
