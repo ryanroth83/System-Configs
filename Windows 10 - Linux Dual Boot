@@ -1,0 +1,9 @@
+## Wndows bootloader to REFIND
+## Powershell with admin
+bcdedit /set '{bootmgr}' path \EFI\refind\refind_x64.efi
+
+Change Windows to UTC time
+Open Registry Editor
+Nav to: HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\TimeZoneInformation
+Add 32bit DWORD: RealTimeIsUniversal
+Set value to 1
